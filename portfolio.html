@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO PAGE</title>
+    <link rel="stylesheet" type="text/css" href="port.css">
+</head>
+<body>
+    <header>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKsAAACUCAMAAADbGilTAAAAM1BMVEXk5ueutLeqsLPO0tTn6erh4+Tq7O3a3d6xt7rU19m/xMbEyMvJzc/d4OG5vsG9wcSkq6+UDpwhAAAD9ElEQVR4nO2b13LcMAwAWSBWibr//9pQvhJdZxNAj7l5iJOnHRiEWADGBoPBYDAYDAaDwWAw+LsAAGPTxvnHbgGYtJy9WyPOS6tZr7oA0gXDhRA8sv1lgtOgqL2eAKbXs+Q9gruF9RVcsOsL0bOtcLajVFDLyt+pnmM7dSILzH8QvSC7kAUdvqtysXYQWrAmQTXKGk0uK1NEz7aWVhbmpKD2IAsyQzViKVWzTGNkyXIWbF5UN1miagAs1zQSSFQZuOywxsB6EtW5IKxEKTuZIldu8DeJKmET8DqwM3pgp1OZagzsgqwKa6kq5zOyqi5X5WbCdS3N1g2Bu5ktLQKXwKKWgvyv611gMVeXensSTMMjBhbqVLlBTNil0pVrNNXCrcAOvEqgQqWq8GiuUFWxNhza52Cpdg1YrmCrXdH2L2BrVfEKQfbxldK1umRxgXVTMFyHawvXUQdeuP6i+sp0/XcL73j4e/YDTNW6It7AKVcbV7x7ooJL4nsM5stB8WXWBcSbl9qEXTHP3JnvLw/gPh4tVWEVuDewJW8FN1W8U+xG1ZYAbeNypXx1CYesWlNi0Z9lVbFqQH/bKA7sCfcG/izri1QF5t3rjbKbIrzd4J6yLCDqdyh4OkR+gtmT+yAnHF0XSebTkVjJTDfSGp6uUSVVhSWlkeymStyhNaU+dQlP3/mmElu0uugoBPs9D0Sg79D7ASb/5awoZvrf/5W4xD6prtSL6g5Q1r0sX0IY38mv/z/AFhkeO7aFWOXSUQP0DmDa775kwduufvmPKAWTthE9gepZdMvbO3qUhZ+BkklL6d0agol/QnB+llt4+8nXaLJoK33g4iQe1lb8d/xPs85Wb860ogoW69eo+fnDFZXN6qWmy2BQes5rejAkExwxOa3np/wzjAgSdz4GwPqnup+sa5ycsM7dCmT4NP7y3ZYbj2EbV70vjehe9xTs0Vsv0K4qpHvdII9MXMWamf4Q7GGZ8HVLnU08LhwRW2Ay53ydbOuX5rIw1fa6vZM1jRMBWM48Ua5taBnaGNTjVLd6266jRCWOvlXQ6i05a56sEGHauDavVK9lW5x2K1uzk2nwTn/oqrqjcgIJpsNX1V62KrLH1qpnKmQBWbViSKJoSK+Swk8YRl19ouyprmrsqZiyPoiJQrXsta52PKec7HNYi17MQrLfFuvHHcrJzAKSGnAlt+GUzjR3eSmCr8BeNisJSFWzRpNVWStLOzK+XnUTpS1IzljC2noho9OgZqi4Dclliz4F0mdQNHlY05t4KL9ZN9IuuaonSltwSgurwri7+EZiPy/04Jp4w6W7cHVJCWu3d1Vy0jp6teyBxAILXZDmOvhb/AN6bzfTexgP5QAAAABJRU5ErkJggg==">
+        <h1>Your Name</h1>
+        <p>Hiring | Ready to Work | Working | Studying | Internship</p>
+    </header>
+    <section id="bio">
+        <h2>About Yourself</h2>
+        <p>Your Biography</p>
+    </section>
+    <section id="work-done"> 
+        <h2>Your Work</h2>  
+        <div class="project" id="project-1">Project 1</div>  
+        <div class="project" id="project-2">Project 2</div>
+        <div class="project" id="project-3">Project 3</div>
+    </section>
+    <section id="events-participated">
+        <h2>Events Participated</h2>
+        <div class="event" id="event-1">Event 1</div>
+        <div class="event" id="event-2">Event 2</div>
+        <div class="event" id="event-3">Event 3</div>
+    </section>
+    <footer>Contact me at: <a href="mailto:youremail@example.com">youremail@example.com</a></footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const projects = document.querySelectorAll('.project');
+            const events = document.querySelectorAll('.event');
+
+            projects.forEach(project => {
+                project.addEventListener('click', () => {
+                    alert('More details about ' + project.textContent);
+                });
+            });
+
+            events.forEach(event => {
+                event.addEventListener('click', () => {
+                    alert('More details about ' + event.textContent);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
